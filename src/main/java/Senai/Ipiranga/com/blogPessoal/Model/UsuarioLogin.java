@@ -1,35 +1,15 @@
 package Senai.Ipiranga.com.blogPessoal.Model;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 
-@Entity
-@Table(name="usuarios")
-public class Usuario {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+
+
+public class UsuarioLogin {
 	private long id;
 	private String nome;
 	private String usuario;
 	private String senha;
+	private String token;
 	private String foto;
 	private String tipo;
-	
-	
-	public String getTipo() {
-		return tipo;
-	}
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
-	}
-	public String getFoto() {
-		return foto;
-	}
-	public void setFoto(String foto) {
-		this.foto = foto;
-	}
 	public long getId() {
 		return id;
 	}
@@ -54,7 +34,24 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	
-	
+	public String getToken() {
+		return token;
+	}
+	public void setToken(String token) {
+		this.token = token;
+	}
+	public String getFoto() {
+		return foto;
+	}
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
 
+	
 }
