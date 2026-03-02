@@ -2,10 +2,8 @@ package Senai.Ipiranga.com.blogPessoal.Seguranca;
 
 import java.util.Collection;
 import java.util.List;
-
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-
 import Senai.Ipiranga.com.blogPessoal.Model.Usuario;
 
 public class UserDetailsImpl implements UserDetails {
@@ -33,8 +31,7 @@ public class UserDetailsImpl implements UserDetails {
 	
 	@Override
 	public String getUsername() {
-		return userName;
-		
+		return userName;	
 	}
 	
 	@Override
